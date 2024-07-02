@@ -1,0 +1,18 @@
+CREATE DATABASE library_db;
+
+USE library_db;
+
+CREATE TABLE books (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(100) NOT NULL,
+    isbn VARCHAR(20) NOT NULL,
+    quantity INT NOT NULL
+);
+
+CREATE TABLE members (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    phone VARCHAR(15) NOT NULL,
+    email VARCHAR(100) NOT NULL
+);
